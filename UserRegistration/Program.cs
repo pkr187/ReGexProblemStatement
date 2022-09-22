@@ -6,6 +6,7 @@
         {
             User user = new User();
             user.FirstName("Pkr");
+            user.LastName("Ram");
         }
     }
 }
