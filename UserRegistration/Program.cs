@@ -11,6 +11,7 @@
             user.PhoneNumber("91 8825178849");
             user.Password("ase4rfb5");
             user.Password2("Ase4rfb5");
+            user.Password3("A0njnnr2b");
         }
     }
 }

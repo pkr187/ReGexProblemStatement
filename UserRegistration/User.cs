@@ -53,9 +53,17 @@ namespace UserRegistration
         public const string PASSWORD2_REGEX = "^[A-Z]+[A-Za-z0-9]{7,}$";
         public void Password2(string password2)
         {
-            Regex regex = new Regex(PASSWORD_REGEX);
+            Regex regex = new Regex(PASSWORD2_REGEX);
             bool result = regex.IsMatch(password2);
             Console.WriteLine("\nUC-6: Entered Password is " + result);
+        }
+        //UC 7 Checking for Password of atleast 1 Number Validation
+        public const string PASSWORD3_REGEX = "^[A-Z]+[0-9]+[A-Za-z0-9]{6,}$";
+        public void Password3(string password3)
+        {
+            Regex regex = new Regex(PASSWORD3_REGEX);
+            bool result = regex.IsMatch(password3);
+            Console.WriteLine("\nUC-7: Entered Password is " + result);
         }
     }
 }
