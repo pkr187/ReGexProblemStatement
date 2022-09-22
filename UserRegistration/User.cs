@@ -65,6 +65,14 @@ namespace UserRegistration
             bool result = regex.IsMatch(password3);
             Console.WriteLine("\nUC-7: Entered Password is " + result);
         }
+        //UC 8 Checking for Password of atleast 1 Special Character Validation
+        public const string PASSWORD4_REGEX = "^[A-Z]+[0-9]+[!@#$%]{1}[A-Za-z0-9]{5,}$";
+        public void Password4(string password4)
+        {
+            Regex regex = new Regex(PASSWORD4_REGEX);
+            bool result = regex.IsMatch(password4);
+            Console.WriteLine("\nUC-8: Entered Password is " + result);
+        }
     }
 }
     
