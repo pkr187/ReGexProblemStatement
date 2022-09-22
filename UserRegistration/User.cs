@@ -39,7 +39,15 @@ namespace UserRegistration
         {
             Regex regex = new Regex(PHONENUMBER_REGEX);
             bool result = regex.IsMatch(email);
-            Console.WriteLine("\nUC-3: Entered Phone Number is " + result);
+            Console.WriteLine("\nUC-4: Entered Phone Number is " + result);
+        }
+        //UC 5 Checking for Password of Minimum 8 Characters Validation
+        public const string PASSWORD_REGEX = "^[A-Za-z0-9]{8,}$";
+        public void Password(string email)
+        {
+            Regex regex = new Regex(PASSWORD_REGEX);
+            bool result = regex.IsMatch(email);
+            Console.WriteLine("\nUC-5: Entered Password is " + result);
         }
     }
 }
