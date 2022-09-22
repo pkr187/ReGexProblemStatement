@@ -35,19 +35,27 @@ namespace UserRegistration
         }
         //UC 4 Checking for Phone Number Validation
         public const string PHONENUMBER_REGEX = "^[91]*[ ]*[0-9]{10}$";
-        public void PhoneNumber(string email)
+        public void PhoneNumber(string phonenumber)
         {
             Regex regex = new Regex(PHONENUMBER_REGEX);
-            bool result = regex.IsMatch(email);
+            bool result = regex.IsMatch(phonenumber);
             Console.WriteLine("\nUC-4: Entered Phone Number is " + result);
         }
         //UC 5 Checking for Password of Minimum 8 Characters Validation
         public const string PASSWORD_REGEX = "^[A-Za-z0-9]{8,}$";
-        public void Password(string email)
+        public void Password(string password)
         {
             Regex regex = new Regex(PASSWORD_REGEX);
-            bool result = regex.IsMatch(email);
+            bool result = regex.IsMatch(password);
             Console.WriteLine("\nUC-5: Entered Password is " + result);
+        }
+        //UC 6 Checking for Password of atleast 1 Upper case Validation
+        public const string PASSWORD2_REGEX = "^[A-Z]+[A-Za-z0-9]{7,}$";
+        public void Password2(string password2)
+        {
+            Regex regex = new Regex(PASSWORD_REGEX);
+            bool result = regex.IsMatch(password2);
+            Console.WriteLine("\nUC-6: Entered Password is " + result);
         }
     }
 }
