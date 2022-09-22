@@ -7,6 +7,7 @@
             User user = new User();
             user.FirstName("Pkr");
             user.LastName("Ram");
+            user.Email("abc.xyz@bl.co.in");
         }
     }
 }
